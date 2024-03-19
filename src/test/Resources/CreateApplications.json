@@ -1,0 +1,244 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1710820762.json",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "application"
+  ],
+  "properties": {
+    "application": {
+      "$id": "#root/application",
+      "title": "Application",
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "repo_url",
+        "host_name",
+        "owner",
+        "team_name",
+        "business_units",
+        "notes",
+        "risk_meter_score",
+        "vulnerability_count",
+        "asset_count",
+        "total_vulnerability_count",
+        "open_vulnerability_count_by_risk_level",
+        "historical_risk_meter_scores",
+        "external_facing",
+        "priority",
+        "identifiers"
+      ],
+      "properties": {
+        "id": {
+          "$id": "#root/application/id",
+          "title": "Id",
+          "type": "integer",
+          "examples": [
+            710
+          ],
+          "default": 0
+        },
+        "name": {
+          "$id": "#root/application/name",
+          "title": "Name",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "API"
+          ],
+          "pattern": "^.*$"
+        },
+        "repo_url": {
+          "$id": "#root/application/repo_url",
+          "title": "Repo_url",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "http://127.0.0.0"
+          ],
+          "pattern": "^.*$"
+        },
+        "host_name": {
+          "$id": "#root/application/host_name",
+          "title": "Host_name",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "API automation application"
+          ],
+          "pattern": "^.*$"
+        },
+        "owner": {
+          "$id": "#root/application/owner",
+          "title": "Owner",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "Venkata"
+          ],
+          "pattern": "^.*$"
+        },
+        "team_name": {
+          "$id": "#root/application/team_name",
+          "title": "Team_name",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "API Team"
+          ],
+          "pattern": "^.*$"
+        },
+        "business_units": {
+          "$id": "#root/application/business_units",
+          "title": "Business_units",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "API business unit"
+          ],
+          "pattern": "^.*$"
+        },
+        "notes": {
+          "$id": "#root/application/notes",
+          "title": "Notes",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "localhost"
+          ],
+          "pattern": "^.*$"
+        },
+        "risk_meter_score": {
+          "$id": "#root/application/risk_meter_score",
+          "title": "Risk_meter_score",
+          "type": "integer",
+          "examples": [
+            0
+          ],
+          "default": 0
+        },
+        "vulnerability_count": {
+          "$id": "#root/application/vulnerability_count",
+          "title": "Vulnerability_count",
+          "type": "integer",
+          "examples": [
+            0
+          ],
+          "default": 0
+        },
+        "asset_count": {
+          "$id": "#root/application/asset_count",
+          "title": "Asset_count",
+          "type": "integer",
+          "examples": [
+            0
+          ],
+          "default": 0
+        },
+        "total_vulnerability_count": {
+          "$id": "#root/application/total_vulnerability_count",
+          "title": "Total_vulnerability_count",
+          "type": "integer",
+          "examples": [
+            0
+          ],
+          "default": 0
+        },
+        "open_vulnerability_count_by_risk_level": {
+          "$id": "#root/application/open_vulnerability_count_by_risk_level",
+          "title": "Open_vulnerability_count_by_risk_level",
+          "type": "object",
+          "required": [
+            "high",
+            "medium",
+            "low",
+            "total"
+          ],
+          "properties": {
+            "high": {
+              "$id": "#root/application/open_vulnerability_count_by_risk_level/high",
+              "title": "High",
+              "type": "integer",
+              "examples": [
+                0
+              ],
+              "default": 0
+            },
+            "medium": {
+              "$id": "#root/application/open_vulnerability_count_by_risk_level/medium",
+              "title": "Medium",
+              "type": "integer",
+              "examples": [
+                0
+              ],
+              "default": 0
+            },
+            "low": {
+              "$id": "#root/application/open_vulnerability_count_by_risk_level/low",
+              "title": "Low",
+              "type": "integer",
+              "examples": [
+                0
+              ],
+              "default": 0
+            },
+            "total": {
+              "$id": "#root/application/open_vulnerability_count_by_risk_level/total",
+              "title": "Total",
+              "type": "integer",
+              "examples": [
+                0
+              ],
+              "default": 0
+            }
+          }
+        }
+      ,
+        "historical_risk_meter_scores": {
+          "$id": "#root/application/historical_risk_meter_scores",
+          "title": "Historical_risk_meter_scores",
+          "type": "array",
+          "default": []
+        },
+        "external_facing": {
+          "$id": "#root/application/external_facing",
+          "title": "External_facing",
+          "type": "boolean",
+          "examples": [
+            false
+          ],
+          "default": true
+        },
+        "priority": {
+          "$id": "#root/application/priority",
+          "title": "Priority",
+          "type": "integer",
+          "examples": [
+            10
+          ],
+          "default": 0
+        },
+        "identifiers": {
+          "$id": "#root/application/identifiers",
+          "title": "Identifiers",
+          "type": "array",
+          "default": [],
+          "items":{
+            "$id": "#root/application/identifiers/items",
+            "title": "Items",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "hello"
+            ],
+            "pattern": "^.*$"
+          }
+        }
+      }
+    }
+
+  }
+}
