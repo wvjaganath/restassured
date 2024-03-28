@@ -33,6 +33,7 @@ public class Base {
                     .addHeader("X-Risk-Token", token);
             Request = given()
                     //.filter(new AllureRestAssured())
+//                    .filters(new RequestLoggingFilter(), new ResponseLoggingFilter())
                     .spec(builder.build());
 
             return Request;
@@ -78,6 +79,15 @@ public class Base {
         return Request.post(endpoint);
     }
 
+    public static Response put(String RequestBody, String endpoint, Map<String, String> Params) {
+        Request = getRequestSpecification();
+        Request.pathParams(Params);
+        Request.body(RequestBody);
+        Request.contentType("application/json");
+        Request.accept("application/json");
+        return Request.put(endpoint);
+    }
+
     public static Response post(Map<String, String> pathParams, File file, String endpoint) {
         Request = getRequestSpecification();
         Request.contentType("multipart/form-data");
@@ -87,8 +97,10 @@ public class Base {
         return Request.post(endpoint);
     }
 
-    public static Response delete(String endpoint) {
+    public static Response delete(String endpoint, Map<String, String> Params) {
         Request = getRequestSpecification();
+        Request.pathParams(Params);
         return Request.delete(endpoint);
     }
+
 }

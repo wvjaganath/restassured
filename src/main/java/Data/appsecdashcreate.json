@@ -1,0 +1,28 @@
+{
+  "createApplication": {
+    "application": {
+      "host_name": "https://apiautomation.kenna.com",
+      "name": "Application QA",
+      "notes": "created via api at",
+      "owner": "QA",
+      "priority": 1,
+      "repo_url": "apitest.com",
+      "team_name": "qa team",
+      "business_units": "three units",
+      "external_facing": true,
+      "identifiers": [
+        "hello",
+        "it",
+        "is",
+        "me"
+      ]
+    }
+  },
+  "updateApplication": {
+    "host_name": "https://apiautomation.kenna.com",
+    "name": "Updated Application",
+    "notes": "update via api",
+    "owner": "QA",
+    "priority": "8"
+  }
+}
